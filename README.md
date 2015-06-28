@@ -1,26 +1,24 @@
 #Plagiatsdetector
-Plagiatsdetector is a tool written in java that automatically scans though folders of files and checks all files of a specified extension
-for equal occurences of a certain length.
+Plagiatsdetector is a tool written in java that automatically scans though folders of files and checks all files of a specified extension for equal occurences of a certain length.
 
 ### Authors
-Sebastian Schinzel
-Dennis Loehr
+Sebastian Schinzel, Dennis Loehr
 
 ### Version
 1.0
 
 ### Installation
 The easiest Setup is to use eclipse. Download the eclipse IDE for Java according to your system from here: https://www.eclipse.org/downloads/
-Import the project via File->Import...->Existing Projects into Workspace. You will now find the Project in your workspace. You will need to modify the file src/de.fhmuenster.its.plag/Main.java according to your needs.
+Import the project via File->Import...->Existing Projects into Workspace. You will now find the Project in your workspace. You will need to modify the file ```src/de.fhmuenster.its.plag/Main.java``` according to your needs.
 
-#### Necessary modification
+#### Configuration
 Line 47: The Path variable. Put the path with all the sources here. You may want to put them in different directories based on the authors.
 Line 51: The extensions variable. This is a list of extensions you want to be checked. For instance if you check eclipse projects for code duplication you may want to skip automatically produced files such as '.project' and '.classpath'. The list is specified by entries surrounded by "". They are seperated by a comma and you can extend it.
 Line 55: The blacklist variable. This list contains all the files that you specifically not want to be checked. For instance this could be several files again produced by your IDE such as 'settings.xml' or something.
 
 #### Run
 
-After you have modified everything just click run in eclipse or build the java file manually and execute it from console. The outputs will be as following:
+Just click run in eclipse or build the java file manually and execute it from console. The outputs will be as following:
 > Dirname: example1
 > length: 5302
 >
